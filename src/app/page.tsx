@@ -10,24 +10,25 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.container}>
-        <img src="/imgC1.jpg" className={styles.containerImg} />
-        <h2>LAWRENCE MOTORS</h2>
-        <p>Lawrence Motors es una empresa dedicada a la compra y venta de autos usados. Contamos con una amplia variedad de vehículos de diferentes marcas y modelos, todos en excelentes condiciones y a precios competitivos.</p>
+        <h2 className={styles.h2}>LAWRENCE MOTORS</h2>
+        <p className={styles.pContainer}>Lawrence Motors es una empresa dedicada a la compra y venta de autos usados. Contamos con una amplia variedad de vehículos de diferentes marcas y modelos, todos en excelentes condiciones y a precios competitivos.</p> 
+        <img src="/banner.png" className={styles.containerImg} />
       </div>
-      <div className={styles.container}>
-        <h2>INFO INFO INFO</h2>
+      <div className={styles.grid}>
+        <h2 className={styles.h2}>INFO INFO INFO</h2>
+        <p className={styles.p}>En Lawrence Motors nos preocupamos.</p>
         <div className={styles.containerGrid}>
-          <div >
-            <img src="/imgC1.jpg" className={styles.containerImgGrid}/>
-            <p  className={styles.p}>Compacto</p>
+          <div  className={styles.containerInfo}>
+            <img src="/grid/g1.png" className={styles.containerImgGrid}/>
+            <a href=""><p  className={styles.p}>Compacto</p></a>
           </div>
-          <div>
-            <img src="/imgC1.jpg" className={styles.containerImgGrid} />
-            <p className={styles.p}>SUV </p>
+          <div className={styles.containerInfo}>
+            <img src="/grid/g2.png" className={styles.containerImgGrid} />
+            <a href=""><p  className={styles.p}>Compacto</p></a>
           </div>
-          <div>
-            <img src="/imgC1.jpg" className={styles.containerImgGrid} />
-            <p className={styles.p}>Deportivo</p>
+          <div className={styles.containerInfo}>
+            <img src="/grid/g3.png" className={styles.containerImgGrid} />
+            <a href=""><p  className={styles.p}>Compacto</p></a>
           </div>
         </div> 
       </div>
