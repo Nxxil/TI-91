@@ -1,9 +1,7 @@
 import styles from '@/app/styles/page.module.css'
-import Header from "./components/header";
 export default function Home() {
   return (
     <div>
-      <Header />
       <div className={styles.banner}>
         <img src="/imgC1.jpg" alt="" />
         <div className={styles.bannerText}>

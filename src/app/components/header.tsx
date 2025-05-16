@@ -1,4 +1,4 @@
-'use client'; // Solo necesario si estás en App Router y usas estado
+'use client'; 
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -18,8 +18,8 @@ export default function Navbar() {
       <div className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
         <Link href="/" className={styles.link}>Inicio</Link>
         <Link href="/productos" className={styles.link}>Productos</Link>
-        <Link href="/nosotros" className={styles.link}>Nosotros</Link>
         <Link href="/contacto" className={styles.link}>Contacto</Link>
+        <Link href="/login" className={styles.link}>Iniciar Sesión</Link>
       </div>
     </nav>
   );
