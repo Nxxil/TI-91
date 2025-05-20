@@ -3,7 +3,8 @@ export default function Home() {
   return (
     <div>
       <div className={styles.banner}>
-        <img src="/imgC1.jpg" alt="" />
+        <video src="/video.mp4" autoPlay={true} controls={true} loop={true} width="100%" height="auto">
+        </video>
         <div className={styles.bannerText}>
           <h1>Bienvenido</h1>
           <p>Encuentra los mejores autos</p>
