@@ -1,0 +1,40 @@
+
+.table {
+    margin-left: 10%;
+}
+
+.filtros {
+    position: absolute;
+    right: 10%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1%;
+    color: #ffffff;
+    background-color: #182538;
+    width: 15%;
+    height: 47%;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .table {
+        margin-left: 2%;
+    }
+    .filtros {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .table {
+        margin-left: 0;
+        width: 100%;
+    }
+    .filtros {
+        display: none;
+    }
+}

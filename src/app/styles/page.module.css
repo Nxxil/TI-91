@@ -104,8 +104,7 @@
         font-size: 3rem;
     }
     .bannerText {
-        padding: 10px;
-        top: 65%;
+        display: none;
     }
     .container h2 {
         font-size: 2rem;
@@ -134,8 +133,7 @@
         font-size: 1rem;
     }
     .bannerText {
-        padding: 10px;
-        top: 65%;
+        display: none;
     }
     .container {
         padding: 2%;
