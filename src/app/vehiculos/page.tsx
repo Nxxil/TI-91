@@ -12,7 +12,7 @@ export default function Vehiculos() {
                             display: 'grid',
                             gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
                             gap: '2rem',
-                            width: '100%',
+                            width: '70%',
                         }}
                     >
                         {vehiculos.map((vehiculo, idx) => (
@@ -39,8 +39,7 @@ export default function Vehiculos() {
                         ))}
                     </div>
                 </div>
-                </div>
-                <div className={styles.filtros}>
+                <div className={styles.filtros} style={{ minWidth: '220px' }}>
                     <input
                         type="text"
                         placeholder="Buscar por nombre..."
@@ -48,20 +47,51 @@ export default function Vehiculos() {
                             padding: '0.5rem',
                             width: '200px',
                             backgroundColor: 'inherit',
-                            color: 'inherit', 
+                            color: 'inherit',
+                            borderRadius: '8px',
+                            textAlign: 'center',
                         }}
-                        className={styles.inputWhitePlaceholder}
                     />
                     <select
-                        style={{ padding: '0.5rem', width: '150px' }}
+                        style={{ padding: '0.5rem', width: '100%', textAlign: 'center',}}
                     >
                         <option value="" style={{ color: '#182538' }}>Todos los tipos</option>
                         <option value="auto" style={{ color: '#182538' }}>Auto</option>
                         <option value="camioneta" style={{ color: '#182538' }}>Camioneta</option>
                         <option value="moto" style={{ color: '#182538' }}>SUV</option>
                     </select>
-                    {/* Puedes agregar más filtros aquí */}
+                    <select
+                        style={{ padding: '0.5rem', width: '100%', textAlign: 'center', marginTop: '0.5rem' }}
+                    >
+                        <option value="" style={{ color: '#182538' }}>Todas las marcas</option>
+                        <option value="toyota" style={{ color: '#182538' }}>Toyota</option>
+                        <option value="ford" style={{ color: '#182538' }}>Ford</option>
+                        <option value="chevrolet" style={{ color: '#182538' }}>Chevrolet</option>
+                        <option value="honda" style={{ color: '#182538' }}>Honda</option>
+                        {/* Agrega más marcas según tus datos */}
+                    </select>
+                    <select
+                        style={{ padding: '0.5rem', width: '100%', textAlign: 'center', marginTop: '0.5rem' }}
+                    >
+                        <option value="" style={{ color: '#182538' }}>Todos los años</option>
+                        <option value="2024" style={{ color: '#182538' }}>2024</option>
+                        <option value="2023" style={{ color: '#182538' }}>2023</option>
+                        <option value="2022" style={{ color: '#182538' }}>2022</option>
+                        <option value="2021" style={{ color: '#182538' }}>2021</option>
+                        {/* Agrega más años según tus datos */}
+                    </select>
+                    <select
+                        style={{ padding: '0.5rem', width: '100%', textAlign: 'center', marginTop: '0.5rem' }}
+                    >
+                        <option value="" style={{ color: '#182538' }}>Todos los colores</option>
+                        <option value="blanco" style={{ color: '#182538' }}>Blanco</option>
+                        <option value="negro" style={{ color: '#182538' }}>Negro</option>
+                        <option value="rojo" style={{ color: '#182538' }}>Rojo</option>
+                        <option value="azul" style={{ color: '#182538' }}>Azul</option>
+                        {/* Agrega más colores según tus datos */}
+                    </select>
                 </div>
+            </div>
         </div>
     );
 }
