@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div>
       <div className={styles.banner}>
-        <video src="/video.mp4" autoPlay={true} controls={true} loop={true} width="100%" height="auto">
+        <video src="/video.mp4" autoPlay={true} controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
         </video>
         <div className={styles.bannerText}>
           <h1>Bienvenido</h1>
