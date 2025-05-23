@@ -1,4 +1,5 @@
 'use client'; 
+import { ThemeToggle } from '@/app/theme-toggle';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -21,6 +22,7 @@ export default function Navbar() {
         <Link href="/vehiculos" className={styles.link}>Vehículos</Link>
         <Link href="/contacto" className={styles.link}>Contacto</Link>
         <Link href="/login" className={styles.link}>Iniciar Sesión</Link>
+        <ThemeToggle/>
       </div>
     </nav>
   );

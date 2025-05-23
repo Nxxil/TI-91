@@ -37,7 +37,6 @@
 
 .pContainer {
     font-size: 2rem;
-    color: #182538;
     text-align: center;
     width: 70%;
     margin-top: 0;
@@ -48,12 +47,10 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 3rem;
-    color: #182538;
 }
 
 .p {
     font-size: 2rem;
-    color: #182538;
     text-align: center;
     margin-top: 0;
 }
@@ -64,7 +61,6 @@
 }
 
 .grid{
-    background-color: #e5eaed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +85,6 @@
 
 .containerGrid p {
     font-size: 1.8rem;
-    color: #182538;
     text-align: center;
     margin: 2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -145,12 +140,13 @@
     }
     .container p,
     .containerGrid p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         width: 100%;
         margin: 5%;
     }
     .p{
-        display: none;
+        font-size: 1.5rem;
+        text-align: center;
     }
     .containerGrid {
         grid-template-columns: 1fr;

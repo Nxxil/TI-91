@@ -68,7 +68,6 @@ export default function Vehiculos() {
                         <option value="ford" style={{ color: '#182538' }}>Ford</option>
                         <option value="chevrolet" style={{ color: '#182538' }}>Chevrolet</option>
                         <option value="honda" style={{ color: '#182538' }}>Honda</option>
-                        {/* Agrega más marcas según tus datos */}
                     </select>
                     <select
                         style={{ padding: '0.5rem', width: '100%', textAlign: 'center', marginTop: '0.5rem' }}
@@ -78,7 +77,6 @@ export default function Vehiculos() {
                         <option value="2023" style={{ color: '#182538' }}>2023</option>
                         <option value="2022" style={{ color: '#182538' }}>2022</option>
                         <option value="2021" style={{ color: '#182538' }}>2021</option>
-                        {/* Agrega más años según tus datos */}
                     </select>
                     <select
                         style={{ padding: '0.5rem', width: '100%', textAlign: 'center', marginTop: '0.5rem' }}
@@ -88,7 +86,6 @@ export default function Vehiculos() {
                         <option value="negro" style={{ color: '#182538' }}>Negro</option>
                         <option value="rojo" style={{ color: '#182538' }}>Rojo</option>
                         <option value="azul" style={{ color: '#182538' }}>Azul</option>
-                        {/* Agrega más colores según tus datos */}
                     </select>
                 </div>
             </div>

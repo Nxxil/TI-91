@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="bg-white dark:bg-black dark:text-white transition-all duration-300">
       <div className="max-w-3xl text-center space-y-10">
-      <ThemeToggle/>
+      
       </div>
         
       <div className={styles.banner}>
