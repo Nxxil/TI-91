@@ -5,7 +5,7 @@ import styles from '@/app/styles/vehiculos.module.css';
 export default function Vehiculos() {
     return (
         <div>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
+            <div className={styles.container} style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
                 <div className={styles.table} style={{ width: '100%' }}>
                     <div
                         style={{
@@ -31,15 +31,15 @@ export default function Vehiculos() {
                                     alt={vehiculo.nombre}
                                     style={{ display: 'block', margin: '0 auto 8px', maxWidth: '100%', height: 'auto' }}
                                 />
-                                <h1 style={{ fontSize: '1.2rem', margin: '8px 0' }}>
+                                <a href=""><h1 style={{ fontSize: '1.2rem', margin: '8px 0' }}>
                                     {vehiculo.nombre}
                                 </h1>
-                                <p>{vehiculo.descripcion}</p>
+                                </a>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className={styles.filtros} style={{ minWidth: '220px' }}>
+                <div className={styles.filtros} >
                     <input
                         type="text"
                         placeholder="Buscar por nombre..."

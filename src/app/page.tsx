@@ -16,20 +16,19 @@ export default function Home() {
         <img src="/banner.png" className={styles.containerImg} />
       </div>
       <div className={styles.grid}>
-        <h2 className={styles.h2}>INFO INFO INFO</h2>
-        <p className={styles.p}>En Lawrence Motors nos preocupamos.</p>
+        <p className={styles.p}>Nos enorgullece ofrecer un servicio de calidad, atención personalizada y vehículos cuidadosamente seleccionados para garantizar tu satisfacción.</p>
         <div className={styles.containerGrid}>
           <div  className={styles.containerInfo}>
             <img src="/grid/g1.png" className={styles.containerImgGrid}/>
-            <a href=""><p  className={styles.p}>Compacto</p></a>
+            <a href=""><p  className={styles.p}>Autos Verificados</p></a>
           </div>
           <div className={styles.containerInfo}>
             <img src="/grid/g2.png" className={styles.containerImgGrid} />
-            <a href=""><p  className={styles.p}>Compacto</p></a>
+            <a href=""><p  className={styles.p}>Revisados Por Expertos</p></a>
           </div>
           <div className={styles.containerInfo}>
             <img src="/grid/g3.png" className={styles.containerImgGrid} />
-            <a href=""><p  className={styles.p}>Compacto</p></a>
+            <a href=""><p  className={styles.p}>Seguro Incluido</p></a>
           </div>
         </div> 
       </div>
