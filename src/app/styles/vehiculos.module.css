@@ -19,11 +19,32 @@
 
 /* Responsividad */
 @media (max-width: 1024px) {
-    .table {
-        margin-left: 2%;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .filtros {
-        display: none;
+        order: 1;
+        position: static;
+        width: 70%;
+        margin-top: 2%;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .table {
+        order: 2;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 

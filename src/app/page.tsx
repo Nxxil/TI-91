@@ -9,7 +9,7 @@ export default function Home() {
       </div>
         
       <div className={styles.banner}>
-        <video src="/video.mp4" autoPlay={true} controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
+        <video src="/video.mp4" controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
         </video>
         <div className={styles.bannerText}>
           <h1>Bienvenido</h1>
@@ -26,15 +26,15 @@ export default function Home() {
         <div className={styles.containerGrid}>
           <div  className={styles.containerInfo}>
             <img src="/grid/g1.png" className={styles.containerImgGrid}/>
-            <a href=""><p  className={styles.p}>Autos Verificados</p></a>
+            <a href="/construccion"><p  className={styles.p}>Autos Verificados</p></a>
           </div>
           <div className={styles.containerInfo}>
             <img src="/grid/g2.png" className={styles.containerImgGrid} />
-            <a href=""><p  className={styles.p}>Revisados Por Expertos</p></a>
+            <a href="/construccion"><p  className={styles.p}>Revisados Por Expertos</p></a>
           </div>
           <div className={styles.containerInfo}>
             <img src="/grid/g3.png" className={styles.containerImgGrid} />
-            <a href=""><p  className={styles.p}>Seguro Incluido</p></a>
+            <a href="/construccion"><p  className={styles.p}>Seguro Incluido</p></a>
           </div>
         </div> 
       </div>

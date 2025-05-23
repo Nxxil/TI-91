@@ -1,5 +1,6 @@
 import vehiculos from '@/app/vehiculos/data';
 import styles from '@/app/styles/vehiculos.module.css';
+import Link from 'next/link';
 
 
 export default function Vehiculos() {
@@ -31,10 +32,10 @@ export default function Vehiculos() {
                                     alt={vehiculo.nombre}
                                     style={{ display: 'block', margin: '0 auto 8px', maxWidth: '100%', height: 'auto' }}
                                 />
-                                <a href=""><h1 style={{ fontSize: '1.2rem', margin: '8px 0' }}>
+                                <Link href="/construccion"><h1 style={{ fontSize: '1.2rem', margin: '8px 0' }}>
                                     {vehiculo.nombre}
                                 </h1>
-                                </a>
+                                </Link>
                             </div>
                         ))}
                     </div>
