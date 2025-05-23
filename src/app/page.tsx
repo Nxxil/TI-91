@@ -1,5 +1,7 @@
 import styles from '@/app/styles/page.module.css'
 import { ThemeToggle } from './theme-toggle';
+import Narrador from './components/Narrador';
+
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
         
       <div className={styles.banner}>
         <video src="/video.mp4" controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
+        <Narrador />
+
         </video>
         <div className={styles.bannerText}>
           <h1>Bienvenido</h1>
