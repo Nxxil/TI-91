@@ -1,7 +1,13 @@
 import styles from '@/app/styles/page.module.css'
+import { ThemeToggle } from './theme-toggle';
+
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white dark:bg-black dark:text-white transition-all duration-300">
+      <div className="max-w-3xl text-center space-y-10">
+      <ThemeToggle/>
+      </div>
+        
       <div className={styles.banner}>
         <video src="/video.mp4" autoPlay={true} controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
         </video>

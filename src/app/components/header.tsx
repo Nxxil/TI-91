@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import styles from '@/app/styles/header.module.css';
 
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.img}><img src="/logo.png" alt="" /></div>
+      <div className={styles.img}><img src="/logo.png" alt="Logo de Lawrence Motors" /></div>
       <div className={styles.menuToggle} onClick={toggleMenu}>
         ☰
       </div>
