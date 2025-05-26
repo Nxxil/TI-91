@@ -1,5 +1,4 @@
 import styles from '@/app/styles/page.module.css'
-import { ThemeToggle } from './theme-toggle';
 import Narrador from '@/app/components/Narrador';
 
 
@@ -14,13 +13,14 @@ export default function Home() {
         <video src="/video.mp4" controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
 
         </video>
-        <Narrador />
+        
         <div className={styles.bannerText}>
           <h1>Bienvenido</h1>
           <p>Encuentra los mejores autos</p>
         </div>
       </div>
       <div className={styles.container}>
+        <Narrador />
         <h2 className={styles.h2}>LAWRENCE MOTORS</h2>
         <p className={styles.pContainer}>Lawrence Motors es una empresa dedicada a la compra y venta de autos usados. Contamos con una amplia variedad de vehículos de diferentes marcas y modelos, todos en excelentes condiciones y a precios competitivos.</p> 
         <img src="/banner.png" className={styles.containerImg} />
