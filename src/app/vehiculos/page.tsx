@@ -1,9 +1,25 @@
+'use client'
+import { useRouter } from 'next/navigation'
+import { showToast } from 'nextjs-toast-notify';
 import vehiculos from '@/app/vehiculos/data';
 import styles from '@/app/styles/vehiculos.module.css';
 import Link from 'next/link';
 
 
 export default function Vehiculos() {
+
+    const router = useRouter();
+
+    const handleClick = (e, vehiculoNombre) => {
+        // Prevenir la navegación inmediata
+        e.preventDefault();
+        showToast.success(`Vas a ${vehiculoNombre}`);
+        // Redirigir después de un breve retardo
+        setTimeout(() => {
+        router.push('/construccion');
+        }, 5000);
+    };
+
     return (
         <div>
             <div className={styles.container} style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
@@ -32,9 +48,15 @@ export default function Vehiculos() {
                                     alt={vehiculo.nombre}
                                     style={{ display: 'block', margin: '0 auto 8px', maxWidth: '100%', height: 'auto' }}
                                 />
-                                <Link href="/construccion"><h1 style={{ fontSize: '1.2rem', margin: '8px 0' }}>
-                                    {vehiculo.nombre}
-                                </h1>
+                                <Link href="/construccion" legacyBehavior>
+                                    <a
+                                        style={{ textDecoration: 'none', cursor: 'pointer' }}
+                                        onClick={(e) => handleClick(e, vehiculo.nombre)}
+                                    >
+                                        <h1 style={{ fontSize: '1.2rem', margin: '8px 0' }}>
+                                        {vehiculo.nombre}
+                                        </h1>
+                                    </a>
                                 </Link>
                             </div>
                         ))}
