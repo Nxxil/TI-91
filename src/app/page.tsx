@@ -1,14 +1,14 @@
+
 import styles from '@/app/styles/page.module.css'
 import Narrador from '@/app/components/Narrador';
+import NotificationComponent from './components/noti';
 
 
 export default function Home() {
+
   return (
     <div className="bg-white dark:bg-black dark:text-white transition-all duration-300">
-      <div className="max-w-3xl text-center space-y-10">
-      
-      </div>
-        
+      <NotificationComponent />
       <div className={styles.banner}>
         <video src="/video.mp4" controls={true} loop={true} width="100%" height="auto" aria-label="Video con una colección de autos en exhibición y sus características">
 

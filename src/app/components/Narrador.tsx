@@ -1,11 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Narrador = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
+
   const reproducirAudio = () => {
-    const audio = new Audio('/explicacion.mp3');
-    audio.play();
+    audioRef.current?.play();
   };
 
   return (
@@ -23,6 +24,9 @@ const Narrador = () => {
       >
         ▶️ Escuchar explicación
       </button>
+      <div style={{ marginTop: '1rem' }}>
+        <audio ref={audioRef} src="/explicacion.mp3" controls />
+      </div>
     </div>
   );
 };
